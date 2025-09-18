@@ -78,7 +78,8 @@ function App() {
         getPokemonData(chosenPokemon);
         // fetch and set pokemonData
       } else {
-        setCodeName("No match found");
+        setCodeName(null);
+        setPokemonData({});
       }
     }
   }
